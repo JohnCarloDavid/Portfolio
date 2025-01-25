@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hover-scale:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+        .hover-arrow:hover {
+            text-decoration: underline;
+            transition: all 0.3s ease;
+        }
+        .bg-gradient {
+            background: linear-gradient(135deg, #d1d5db 50%, #000000 50%);
+            min-height: 100vh;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .hero-bg {
+            background: linear-gradient(110deg, #d1d5db 50%, #000000 50%);
+        }
+        #certificates {
+            background: linear-gradient(135deg, #edf2f7, #e2e8f0);
+        }
+        #certificates h2 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        #certificates .grid div:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+    </style>
+</head>
+<body class="bg-gradient text-gray-800 relative">
+
+    <nav class="flex justify-between items-center space-x-6 mt-16 px-6">
+        <img src="img/JClogo1.png" alt="Your Logo" class="w-16 h-16"/>
+        <div class="flex space-x-8">
+            <a href="#about" class="text-blue-600 hover:text-blue-400 hover-scale text-lg font-medium">About me</a>
+            <a href="#skills" class="text-blue-600 hover:text-blue-400 hover-scale text-lg font-medium">Skills</a>
+            <a href="#certificates" class="text-blue-600 hover:text-blue-400 hover-scale text-lg font-medium">Certificates</a>
+            <a href="#contact" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-400 hover-scale text-lg font-medium">CONTACT ME</a>
+        </div>
+    </nav>
+
+    <div class="flex flex-col md:flex-row items-center justify-between p-8 mt-12 hero-bg">
+        <div class="text-center md:text-left md:w-1/2 px-6 md:px-16">
+            <h1 class="text-4xl font-bold text-blue-600">Hi, I am</h1>
+            <h2 class="text-5xl font-extrabold text-blue-600">John Carlo David</h2>
+            <p class="text-lg text-gray-600 mt-2">BS Information Technology Student</p>
+            <div class="flex space-x-6 justify-center md:justify-start mt-6">
+                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" class="text-blue-500 hover:text-blue-400 transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:shadow-xl">
+                    <img src="https://openui.fly.dev/openui/24x24.svg?text=%E2%9C%89%EF%B8%8F" alt="Email" class="w-8 h-8"/>
+                </a>
+                <a href="https://github.com/JohnCarloDavid" class="text-blue-500 hover:text-blue-400 transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:shadow-xl">
+                    <img src="https://openui.fly.dev/openui/24x24.svg?text=%F0%9F%90%B1" alt="GitHub" class="w-8 h-8"/>
+                </a>
+                <a href="https://www.instagram.com/official_jaycx/" class="text-blue-500 hover:text-blue-400 transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:shadow-xl">
+                    <img src="https://openui.fly.dev/openui/24x24.svg?text=%F0%9F%93%B8" alt="Instagram" class="w-8 h-8"/>
+                </a>
+            </div>
+           
+            <div class="mt-8">
+                <a href="./img/cv-resume.jpg" download="CV-Resume.jpg" class="download-btn bg-blue-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-blue-500 hover:shadow-lg transition-all duration-300">
+                    Download CV
+                </a>
+            </div>
+            
+                
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0 flex justify-end">
+            <img src="img/profile1.png" alt="Your Image" class="rounded-full border-4 border-white shadow-xl hover:shadow-2xl transition-all duration-300"/>
+        </div>
+    </div>
+    
+
+    <section id="about" class="py-20 px-6 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-blue-600 mb-8">About Me</h2>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                Hello! I'm John Carlo David, a passionate BS Information Technology student with hands-on experience in web development through my capstone project. I enjoy creating user-friendly and responsive websites and have worked with both frontend and backend technologies to bring ideas to life. My capstone journey has taught me the importance of combining design, functionality, and problem-solving to develop effective solutions.            </p>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                In addition to web development, I have basic experience in tech support. I've learned the fundamentals of troubleshooting hardware and software issues, assisting users with technical concerns, and providing basic system and network support. This background has helped me develop problem-solving skills and a keen understanding of how technology can address real-world needs.
+            </p>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                I'm always eager to learn and grow, exploring new tools and frameworks to refine my skills and make a meaningful impact in the tech industry.           
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 px-6 bg-gray-100">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-blue-600 mb-8">Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-4">Frontend Development</h3>
+                    <ul class="text-lg text-gray-700">
+                        <li>HTML</li>
+                        <li>CSS (Tailwind CSS, Bootstrap)</li>
+                        <li>JavaScript</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-4">Backend Development</h3>
+                    <ul class="text-lg text-gray-700">
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-4">Tech Support</h3>
+                    <ul class="text-lg text-gray-700">
+                        <li>Hardware Troubleshooting</li>
+                        <li>Software Installation</li>
+                        <li>Networking Basics</li>
+                        <li>Customer Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="py-20 px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-semibold text-blue-600 mb-12">Certificates</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Certificate 1 -->
+                <div class="bg-white shadow-lg rounded-xl overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="img/msoft.png" alt="Certificate 1" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-600 mb-2">Microsoft 365 Fundamentals</h3>
+                    </div>
+                </div>
+                <!-- Certificate 2 -->
+                <div class="bg-white shadow-lg rounded-xl overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="img/ITspecialist.png" alt="Certificate 2" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-600 mb-2">Information Technology Specialist in HTML and CSS</h3>
+                    </div>
+                </div>
+                <!-- Certificate 3 -->
+                <div class="bg-white shadow-lg rounded-xl overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <img src="img/Meta.png" alt="Certificate 3" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-600 mb-2">Meta Certified Digital Marketing Associate</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="py-20 px-6 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <form action="https://script.google.com/macros/s/AKfycbyass-FgaWXqHu1QZj_548sXG_LQWc3ISjmkNkbMt9kbg5LbtpS42IlgIUDXUKGj-ia/exec" method="post" name="contact-form" class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg space-y-6">
+                <h4 class="text-3xl font-semibold text-blue-600 text-center">Contact Us</h4>
+                
+                <!-- Name Input -->
+                <div>
+                    <input type="text" name="your-name" placeholder="Your Name" 
+                        class="w-full px-4 py-3 mt-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+    
+                <!-- Number Input -->
+                <div>
+                    <input type="text" name="your-number" placeholder="Your Number" 
+                        class="w-full px-4 py-3 mt-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+    
+                <!-- Email Input -->
+                <div>
+                    <input type="email" name="your-email" placeholder="Your Email" 
+                        class="w-full px-4 py-3 mt-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+    
+                <!-- Message Textarea -->
+                <div>
+                    <textarea name="message" rows="7" placeholder="Your Message" 
+                        class="w-full px-4 py-3 mt-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+    
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <input type="submit" value="Submit" id="submit"
+                        class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-blue-500 hover:shadow-lg transition-all duration-300 focus:outline-none">
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="GoogleSheet.js"></script>
+
+    <footer class="bg-blue-600 text-white py-10">
+        <div class="max-w-6xl mx-auto px-6">
+            <!-- Footer Content -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <!-- About Section -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">About Me</h3>
+                    <p class="text-sm">
+                        Hi, I'm John Carlo David, a dedicated web developer and tech support specialist. I create modern, functional web solutions and provide reliable technical support to solve everyday tech challenges. Let's collaborate to achieve your goals!                    </p>
+                </div>
+                <!-- Links Section -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="text-sm space-y-2">
+                        <li><a href="#about" class="hover:underline">About</a></li>
+                        <li><a href="#skills" class="hover:underline">Skills</a></li>
+                        <li><a href="#certificates" class="hover:underline">Certificates</a></li>
+                        <li><a href="#contact" class="hover:underline">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Social Media Section -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Connect with Me</h3>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="https://www.facebook.com" target="_blank" class="text-white hover:text-gray-300">
+                            <i class="fab fa-facebook-f text-2xl"></i>
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank" class="text-white hover:text-gray-300">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank" class="text-white hover:text-gray-300">
+                            <i class="fab fa-linkedin-in text-2xl"></i>
+                        </a>
+                        <a href="https://www.github.com" target="_blank" class="text-white hover:text-gray-300">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="mt-10 border-t border-blue-400 pt-4 text-center">
+                <p class="text-sm">&copy; 2025 John Carlo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
